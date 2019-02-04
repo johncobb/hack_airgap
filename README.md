@@ -10,8 +10,17 @@ ssh pi@10.0.0.186
 
 ### Run the fan_ctl.py program
 ```console
-python fan_ctl.py
+python air_gap.py
 ```
+
+### Autostart on boot
+```console
+crontab -e
+@reboot sudo python /home/po/aig_gap.py
+```
+ 
+#### Results
+The fan and light will out-pulse HELLO WORLD in morse code.
 
 
 ### Code Editor
